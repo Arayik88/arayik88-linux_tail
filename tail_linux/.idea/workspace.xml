@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75b07e1d-1cc4-4744-9dc3-19aa1ff794e5" name="Default Changelist" comment="" />
+    <list default="true" id="75b07e1d-1cc4-4744-9dc3-19aa1ff794e5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Tail.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +27,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Tail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="120">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2501#2502#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +133,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585054247653" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585066289904" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -152,6 +155,7 @@
     <configuration name="Tail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Tail" />
       <module name="linux_tail" />
+      <option name="PROGRAM_PARAMETERS" value="-n 10 $PROJECT_DIR$/src/main/resources/f.txt $PROJECT_DIR$/src/main/resources/g.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.*" />
@@ -176,18 +180,18 @@
       <option name="presentableId" value="Default" />
       <updated>1585036321236</updated>
       <workItem from="1585036324714" duration="607000" />
-      <workItem from="1585041552235" duration="6253000" />
+      <workItem from="1585041552235" duration="15664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6860000" />
+    <option name="totallyTimeSpent" value="16271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16439395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -196,7 +200,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3291536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1598746" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36050156" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -237,11 +241,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Tail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="120">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2501#2502#0" expanded="true" />
           </folding>
         </state>
       </provider>
