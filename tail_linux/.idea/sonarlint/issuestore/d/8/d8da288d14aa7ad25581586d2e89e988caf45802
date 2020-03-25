@@ -1,0 +1,42 @@
+
+qsquid:S1192¯"MUse already-defined constant 'CHARSET' instead of duplicating its value here.(Õ‘óÈüÿÿÿÿ8‹Œšó.
+}squid:S3012€"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ò­¤ıÿÿÿÿ8ïÊ¢ó.
+[
+squid:S106l"9Replace this use of System.out or System.err by a logger.(èñ³Åÿÿÿÿÿ8åˆÍì.
+\
+squid:S106¨"9Replace this use of System.out or System.err by a logger.(âêØÿÿÿÿÿ8‹Œšó.
+[
+squid:S106G"9Replace this use of System.out or System.err by a logger.(ÚÌàşÿÿÿÿ8˜ö½ê.
+[
+squid:S106]"9Replace this use of System.out or System.err by a logger.(èñ³Åÿÿÿÿÿ8èõÊì.
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(»¦¾/8‹Œšó.
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(»¦¾/8¾Î–ò.
+V
+squid:S106K"9Replace this use of System.out or System.err by a logger.(ÆÚ³Û8Ë›ê.
+V
+squid:S106{"9Replace this use of System.out or System.err by a logger.(ñÊÀş8ŞÃ­ó.
+Fsquid:S1148B"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8œ˜«ç.
+[
+squid:S106E"9Replace this use of System.out or System.err by a logger.(ÚÌàşÿÿÿÿ8¹é¼ê.
+\
+squid:S106¯"9Replace this use of System.out or System.err by a logger.(Õ‘óÈüÿÿÿÿ8‹Œšó.
+W
+squid:S106"9Replace this use of System.out or System.err by a logger.(ò‚Ç8Õ¿çì.
+\
+squid:S106£"9Replace this use of System.out or System.err by a logger.(åšÀáÿÿÿÿÿ8‹Œšó.
+W
+squid:S106¹"9Replace this use of System.out or System.err by a logger.(ìÁòÂ8‹Œšó.
+[
+squid:S106F"9Replace this use of System.out or System.err by a logger.(´¯ªùùÿÿÿÿ8Šœ¹ê.
+\
+squid:S106‹"9Replace this use of System.out or System.err by a logger.(âêØÿÿÿÿÿ8‹Œšó.
+[
+squid:S106-"9Replace this use of System.out or System.err by a logger.(Óúñúÿÿÿÿ8²Çîå.
+V
+squid:S106P"9Replace this use of System.out or System.err by a logger.(…æÇ¦8êÒ¦ç.
+W
+squid:S106³"9Replace this use of System.out or System.err by a logger.(²ÍÄ8‹Œšó.
+Gsquid:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¼ª˜ó.
+isquid:UselessImportCheck">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ŞÛ8Îš“ó.
