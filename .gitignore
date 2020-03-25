@@ -3,3 +3,8 @@
 
 # Package Files #
 *.jar
+
+#IDE specific files
+*.idea
+/.idea
+.idea/
