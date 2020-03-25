@@ -16,6 +16,7 @@ import java.util.Arrays;
 public class ByteReader {
 
     private static final String CHARSET = "UTF-32";
+    private static final int BytesInUTF32 = 4;
 
     //prints strings using bytes from one file
     //here is used exactly one charset for encoding-decoding: UTF-32
@@ -47,7 +48,7 @@ public class ByteReader {
     //the count of invocations depends on how many file paths are there
     //when starting the application
     static void prinBytesFromOneFile(int count, String filePath) {
-        int remainder = count % 4;
+        int remainder = count % BytesInUTF32;
 
         try {
 
@@ -70,7 +71,7 @@ public class ByteReader {
 
                 if (remainder != 0) {
 
-                    byte[] firstCharacterBytes = Arrays.copyOfRange(temp, temp.length - 4 - (count - remainder),
+                    byte[] firstCharacterBytes = Arrays.copyOfRange(temp, temp.length - BytesInUTF32 - (count - remainder),
                             temp.length - (count - remainder));
                     String firstCharacter = new String(firstCharacterBytes, Charset.forName(CHARSET));
 
