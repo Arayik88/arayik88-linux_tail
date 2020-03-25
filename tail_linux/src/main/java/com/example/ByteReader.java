@@ -6,17 +6,19 @@ them in the console
 
 package com.example;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Scanner;
 
 public class ByteReader {
 
     private static final String CHARSET = "UTF-32";
-    private static final int BytesInUTF32 = 4;
+    private static final int BytesInUTF_32 = 4;
 
     //prints strings using bytes from one file
     //here is used exactly one charset for encoding-decoding: UTF-32
@@ -30,7 +32,7 @@ public class ByteReader {
     //here is used exactly UTF-32, which means that this charset never extends, it always
     //uses 4 bytes or 32 bites for one character
     static void printBytes(String[] args) {
-        if (args.length >= 3) {
+        if (args.length > 2) {
             int i = 2;
             try {
                 while (i < args.length) {
@@ -48,31 +50,55 @@ public class ByteReader {
     //the count of invocations depends on how many file paths are there
     //when starting the application
     static void prinBytesFromOneFile(int count, String filePath) {
-        int remainder = count % BytesInUTF32;
 
-        try {
+        int remainder = count % BytesInUTF_32;
+        LinkedList<Byte> queue = new LinkedList<>();
 
-            String text = new String(Files.readAllBytes(Paths.get(filePath)));
+        File file = new File(filePath);
 
-            byte[] temp = text.getBytes(CHARSET);
-
+        try (Scanner sc = new Scanner(file)) {
             System.out.println("______________________________________________________________________");
             System.out.println("Retrieving " + count + " byte characters from " + "'" + filePath + "'");
             System.out.println("______________________________________________________________________");
 
-            if (count > temp.length) {
+
+            while (sc.hasNext()) {
+                byte[] temp = sc.nextLine().getBytes(CHARSET);
+                //simple for loop does not have alternatives because we need to convert byte to Byte
+                for (int i = 0; i < temp.length; i++) {
+                    queue.add(temp[i]);
+                }
+
+                if (queue.size() > count) {
+
+                    for (int i = 0; i < queue.size() - count; i++) {
+                        queue.poll();
+                    }
+                }
+            }
+
+            if (count > queue.size()) {
                 System.out.println("\nWARNING: There are less bytes in the file " + "'" + filePath + "'" +
                         " than you try to retrieve.\n");
-                System.out.println(text);
-
+                try {
+                    String text = new String(Files.readAllBytes(Paths.get(filePath)));
+                    System.out.println(text);
+                } catch (IOException exc) {
+                    System.out.println(exc.getMessage());
+                }
             } else {
 
-                byte[] tail = Arrays.copyOfRange(temp, temp.length - (count - remainder), temp.length);
+                byte[] content = new byte[queue.size()];
+                for (int i = 0; i < content.length; i++) {
+                    content[i] = queue.poll();
+                }
+                int startingPoint = content.length - (count - remainder);
+                byte[] tail = Arrays.copyOfRange(content, startingPoint, content.length);
 
                 if (remainder != 0) {
 
-                    byte[] firstCharacterBytes = Arrays.copyOfRange(temp, temp.length - BytesInUTF32 - (count - remainder),
-                            temp.length - (count - remainder));
+                    byte[] firstCharacterBytes = Arrays.copyOfRange(content,
+                            startingPoint - BytesInUTF_32, startingPoint);
                     String firstCharacter = new String(firstCharacterBytes, Charset.forName(CHARSET));
 
                     System.out.println("\nWARNING: Because the number of bytes you have entered is non dividable" +
@@ -84,9 +110,6 @@ public class ByteReader {
                 System.out.println("\n\n");
             }
 
-        } catch (NoSuchFileException e) {
-            System.out.println(filePath + "  (No such file or directory)\n");
-            Helper.printInvalidCommandMessage();
         } catch (IOException e) {
             System.out.println(e.getMessage());
             Helper.printInvalidCommandMessage();
@@ -94,3 +117,5 @@ public class ByteReader {
 
     }
 }
+
+
