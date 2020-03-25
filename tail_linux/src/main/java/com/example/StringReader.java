@@ -1,3 +1,7 @@
+/*
+This class is for reading strings from files
+ */
+
 package com.example;
 
 import java.io.File;
@@ -7,6 +11,7 @@ import java.util.Scanner;
 
 public class StringReader {
 
+    //prints lines from one file
     static void printLinesFromOneFile(int count, String filePath) {
         LinkedList<String> queue = new LinkedList<>();
 
@@ -24,7 +29,8 @@ public class StringReader {
             }
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            Helper.printInvalidCommandMessage();
         }
 
         System.out.println("------------------------------------------------------------");
@@ -40,8 +46,12 @@ public class StringReader {
         while (!queue.isEmpty()) {
             System.out.println(queue.poll());
         }
+        System.out.println("\n\n");
     }
 
+    //invokes the printLinesFromOneFile() method many times
+    //the count of invocations depends on how many file paths are there
+    //when starting the application
     static void printLines(String[] args) {
         if (args.length >= 3) {
             int i = 2;

@@ -1,7 +1,0 @@
-String SQL = "Select id FROM users WHERE cash = ?"
-
-PreparedStatement sts = new PreparedStatement(SQL);
-sts.setDouble(1,150000);
-sts.executeQuery();
-////////////////////////////////
-String str = MessageFoormat.format("my name is {0} , your name is {1}", Arman, Aro );

@@ -1,3 +1,10 @@
+/*
+This class is the starting point for application.
+The application allows to read from a file (or files): the last lines or
+the last byte characters, depending which method is chosen and prints it in console.
+In the whole application all methods are static: almost no OOP is used, because there is no need for that yet
+ */
+
 package com.example;
 
 public class Tail {
