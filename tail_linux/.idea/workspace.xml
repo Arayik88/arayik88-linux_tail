@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b07e1d-1cc4-4744-9dc3-19aa1ff794e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Tail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Tail.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,22 +23,54 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Tail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="118" column="67" lean-forward="true" selection-start-line="118" selection-start-column="67" selection-end-line="118" selection-end-column="67" />
+            <state relative-caret-position="323">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#printLinesFromOneFile#0;class#Tail#0" />
-                <element signature="e#1466#1510#0" />
-                <element signature="e#1821#1988#1" />
-                <element signature="method#printLines#0;class#Tail#0" />
-                <element signature="e#2170#2557#1" />
-                <element signature="method#printBytes#0;class#Tail#0" />
-                <element signature="e#5456#5457#0" expanded="true" />
-                <element signature="e#5523#5524#0" expanded="true" />
-                <element signature="method#helpAndExit#0;class#Tail#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding>
+                <element signature="e#112#113#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="method#helpAndExit#0;class#Helper#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/StringReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#printLinesFromOneFile#0;class#StringReader#0" />
+                <element signature="e#603#647#0" />
+                <element signature="e#960#1127#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ByteReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,8 +81,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,7 +95,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Helper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/StringReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/Tail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ByteReader.java" />
       </list>
     </option>
   </component>
@@ -142,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585084875093" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585131777015" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../temp/back-end" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -190,18 +223,17 @@
       <updated>1585036321236</updated>
       <workItem from="1585036324714" duration="607000" />
       <workItem from="1585041552235" duration="29316000" />
-      <workItem from="1585121533212" duration="4829000" />
+      <workItem from="1585121533212" duration="5782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34752000" />
+    <option name="totallyTimeSpent" value="35705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -209,7 +241,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.53605014" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20062695" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -250,21 +282,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Tail.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/StringReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="118" column="67" lean-forward="true" selection-start-line="118" selection-start-column="67" selection-end-line="118" selection-end-column="67" />
+        <state relative-caret-position="210">
+          <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#printLinesFromOneFile#0;class#Tail#0" />
-            <element signature="e#1466#1510#0" />
-            <element signature="e#1821#1988#1" />
-            <element signature="method#printLines#0;class#Tail#0" />
-            <element signature="e#2170#2557#1" />
-            <element signature="method#printBytes#0;class#Tail#0" />
-            <element signature="e#5456#5457#0" expanded="true" />
-            <element signature="e#5523#5524#0" expanded="true" />
-            <element signature="method#helpAndExit#0;class#Tail#0" />
+            <element signature="method#printLinesFromOneFile#0;class#StringReader#0" />
+            <element signature="e#603#647#0" />
+            <element signature="e#960#1127#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="e#112#113#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="method#helpAndExit#0;class#Helper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Tail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ByteReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
